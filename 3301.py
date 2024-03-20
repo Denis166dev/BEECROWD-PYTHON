@@ -1,8 +1,12 @@
 H,Z,L = map(int, input().split())
 
-if H > Z and H < L:
+maior = max(H,Z,L)
+menor = min(H,Z,L)
+meio = (H+Z+L) - maior - menor
+
+if meio == H:
     print('huguinho')
-elif Z > H and Z < L:
+elif meio == Z:
     print('zezinho')
-elif L < H and L > Z:
+else:
     print('luisinho')
